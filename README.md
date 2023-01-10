@@ -1,4 +1,4 @@
-# Blog Microservices
+# Event Queue
 
 ## Project status: In Development
 
