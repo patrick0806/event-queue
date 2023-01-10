@@ -15,11 +15,11 @@ import { UserModule } from './modules/user/user.module';
     }),
     MailerModule.forRoot({
       transport: {
-        host: 'smtp.ethereal.email',
-        port: 587,
+        host: process.env.SMTP_HOST,
+        port: process.env.SMTP_PORT,
         auth: {
-          user: 'elijah25@ethereal.email',
-          pass: 'R4eWqRptVSj6fFAK9N',
+          user: process.env.SMTP_USERNAME,
+          pass: process.env.SMTP_PASSWORD,
         },
       },
     }),
